@@ -61,3 +61,55 @@
     color: white;
     font-size: 70px;
 }
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+}
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col-md-3 {
+    padding-left: 3%;
+}
+.crusts {
+    padding-left: 4%;
+}
+#ctrust {
+    border: 2% solid black;
+}
+#section2 {
+    padding-top: 3%;
+    /* background-image: url(../Images/background4.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.5; */
+}
+.col-md-2 {
+    /* background-image: url(../Images/background4.jpg); */
+}
+.card {
+    background: transparent;
+    border: none;
+   
+}
+#card1, #card2, #card3, #card4, #card5, #card6 {
+    border: 2px solid black;
+   border-radius: 5%;
+   filter: contrast(100%);
+   
+}
+input[type=checkbox] {
+    transform: scale(2.0);
+}
+#words {
+    padding: 6%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}

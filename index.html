@@ -46,14 +46,15 @@
             </div>
         </nav>
 
+        <!-- section1 -->
         <section id="section1">
 
             <div id="bckg1">
                 <div id="sec1content">
                     <h1>WELCOME TO GLA'S PIZZERIA &#174;</h1> <br>
                     <p><i>Where beauty comes in all shapes and sizes: Small,<br> large,
-                        circle, square, thin crust, thick crust, stuffed
-                        crust &</i>
+                            circle, square, thin crust, thick crust, stuffed
+                            crust &</i>
                     </p> <br>
                     <h5><b>~~extra toppings~~</b></h5> <br><br>
                     <h4>"Do good. Be nice. Order pizza. Repeat ! "</h4>
@@ -66,79 +67,177 @@
             </div>
 
 
-            <!--....................................................................................... -->
+            <!--..section2..-->
         </section>
 
         <section id="section2">
             <div class="sec2content row">
+                <div class="col-md-4">
+                    <div class="card">
 
-            <div class="col-md-4">
-                <h2>MAKE AN ORDER</h2>
-                <form id="contactform" action="#" method="post">
-                    <input type="text" name="person-name" id="person-name" placeholder="Name.." required /><br><br>
-                    <input type="email" name="person-email" id="person-email" placeholder="Email.." required /><br><br>
-                    <label for="Pizzas">Pizza-Size:</label>
-                    <select id="sizes" name="pizza-size">
-                        <option value="small">small</option>
-                        <option value="medium">medium</option>
-                        <option value="large">large</option>
-                    </select>
-                </form>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-title">
-                        <h2>FLAVOURS</h2>
-
-                        <div class="row">
-
-                        <div id="card1">
-                            <input type="checkbox" name="pizza[]" value="pizza">
-                            <p>Chicken & Beef Pepperoni</p>
-                            <img src="./Images/Pepperoni.jpeg" alt="Pepperoni" width="100">
+                        <div class="card-title">
+                            <h1>FLAVOURS</h1>
                         </div>
 
-                        <div id="card2">
-                            <input type="checkbox" name="pizza[]" value="pizza">
-                            <p>Chicken & Macon BBQ</p>
-                            <img src="./Images/BBQ.jpg" alt="BBQ" width="100">
-                        </div>
+                        <div class="card-body">
 
-                        <div id="card3">
-                            <input type="checkbox" name="pizza[]" value="pizza">
-                            <p>Chicken Tikka</p>
-                            <img src="./Images/tikka.png" alt="Tikka" width="100">
-                        </div>
-                        </div>
+                            <div class="row1">
 
-                        <div class="row">
+                                <div id="card1">
+                                    <div id="words">
+                                        <input type="checkbox" name="pizza[]" value="pizza"><br><br>
+                                        <p>Chicken & Beef <br> Pepperoni</p>
+                                        <img src="./Images/pepperoni.png" alt="Pepperoni" width="130">
+                                    </div>
+                                </div>
 
-                        <div id="card4">
-                            <input type="checkbox" name="pizza[]" value="pizza">
-                            <p>Chicken Hawaiian</p>
-                            <img src="./Images/Hawaiian.png" alt="Hawaiian" width="100">
-                        </div>
+                                <div id="card2">
+                                    <div id="words">
+                                        <input type="checkbox" name="pizza[]" value="pizza"><br><br>
+                                        <p>Chicken & Macon <br> BBQ</p>
+                                        <img src="./Images/BBQ.png" alt="BBQ" width="150">
+                                    </div>
+                                </div>
 
-                        <div id="card5">
-                            <input type="checkbox" name="pizza[]" value="pizza">
-                            <p>Pure Vegie Pizza</p>
-                            <img src="./Images/vegie.png" alt="vegie" width="100">
-                        </div>
+                                <div id="card3">
+                                    <div id="words">
+                                        <input type="checkbox" name="pizza[]" value="pizza"><br><br>
+                                        <p>Chicken Tikka</p><br>
+                                        <img src="./Images/tikka.png" alt="Tikka" width="150">
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="row2">
 
-                        <div id="card6">
-                            <input type="checkbox" name="pizza[]" value="pizza">
-                            <p>Margherita pizza</p>
-                            <img src="./Images/Margherita.png" alt="Margherita" width="100">
+                                <div id="card4">
+                                    <div id="words">
+                                        <input type="checkbox" name="pizza[]" value="pizza"><br><br>
+                                        <p>Chicken Hawaiian</p>
+                                        <img src="./Images/Hawaiian.png" alt="Hawaiian" width="120">
+                                    </div>
+                                </div>
+
+                                <div id="card5">
+                                    <div id="words">
+                                        <input type="checkbox" name="pizza[]" value="pizza"><br><br>
+                                        <p>Pure Vegie Pizza</p>
+                                        <img src="./Images/vegie.png" alt="vegie" width="150">
+                                    </div>
+                                </div>
+
+                                <div id="card6">
+                                    <div id="words">
+                                        <input type="checkbox" name="pizza[]" value="pizza"><br><br>
+                                        <p>Margherita pizza</p>
+                                        <img src="./Images/Margherita.png" alt="Margherita" width="140">
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+                    </div>
+                </div>
+
+                <!-- crust -->
+                <div class="col-md-3">
+                    <div class="crusts">
+                        <h1>CRUSTS</h1>
+
+                        <div id="crust">
+                            <input type="checkbox" name="pizza[]" value="pizza"> ---Cripsy.............ksh 250</input>
+                            <br>
+                            <img src="./Images/cripsy.jpg" alt="Tikka" width="150">
                         </div>
-                
+                        <br><br>
+
+                        <div id="crust">
+                            <input type="checkbox" name="pizza[]" value="pizza"> ---Stuffed..............ksh 350</input>
+                            <br>
+                            <img src="./Images/stuffed.jpg" alt="Tikka" width="150">
+                        </div>
+                        <br><br>
+
+                        <div id="crust">
+                            <input type="checkbox" name="pizza[]" value="pizza"> ---Glutten-free..........ksh
+                            200</input>
+                            <br>
+                            <img src="./Images/glutten-free.jpg" alt="Tikka" width="150">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- toppings -->
+                <div class="col-md-2">
+                    <h1>TOPPINGS</h1>
+                    <input type="checkbox" name="pizza[]" value="pizza"> ---Sausage..........ksh 50<br><br>
+                    <input type="checkbox" name="pizza[]" value="pizza"> ---Cheese...........ksh 300<br><br>
+                    <input type="checkbox" name="pizza[]" value="pizza"> ---Mushroom.........ksh 200<br><br>
+                    <input type="checkbox" name="pizza[]" value="pizza"> ---Fresh Basil......ksh 150<br><br>
+                    <input type="checkbox" name="pizza[]" value="pizza"> ---Black OLives.....ksh 400 <br><br>
+                    <div class="prices">
+                        <img src="./Images/pizzasizes.png" alt="prices" width="300"><br>
+                        <table style="width:100%">
+                            <h4>PRICES PER SIZE</h4>
+                            <thead>
+                                <th>small</th>
+                                <th>Medium</th>
+                                <th>Large</th>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ksh. 550</td>
+                                    <td>ksh. 800</td>
+                                    <td>ksh. 1100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- order card -->
+                <div class="col-md-3">
+                    <h2>MAKE AN ORDER</h2>
+                    <form id="contactform" action="#" method="post">
+                        <p><i> (Select your flavour, Crust and Toppings in the checkbox.)</i> </p>
+                        <input type="text" name="person-name" id="person-name" placeholder="Name.." required /><br><br>
+                        <label for="Pizzas">Pizza-Size:</label>
+                        <select id="sizes" name="pizza-size">
+                            <option value="small">small</option>
+                            <option value="medium">medium</option>
+                            <option value="large">large</option>
+                        </select>
+                        <br><br><br>
+                        <div id="buttons">
+                            <button class="btn btn-primary btn-outline-primary btn-success text-white" type="submit"
+                                id="submit">Submit</button>
+                            <button class="btn btn-outline-warning  btn-danger text-white" type="reset"
+                                id="clear">Checkout</button>
+                        </div>
+                    </form>
+                    <br><br><br>
+                    <div class="orders">
+                        <h3>YOUR ODERS ARE:</h3>
+
                     </div>
                 </div>
             </div>
-             </div>
         </section>
-       
+        <br><br> <br><br> <br>
+
+
+        <!-- footer -->
+        <div class="container">
+            <footer>
+                <p class="text-center text-muted">&copy; 2022 Gla's, Inc <br>
+                    <a class="navbar-brand" href="#"><img src="./Images/pizzalogo.png" alt="logo" width="80"
+                            height="50"><span id="logo">GLA'S<br> PIZZERIA</span></a>
+                </p>
+            </footer>
+        </div>
+    </div>
+
     </div>
 </body>
 
