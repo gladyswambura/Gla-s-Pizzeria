@@ -76,7 +76,7 @@
                     <div class="card">
 
                         <div class="card-title">
-                            <h1>FLAVOURS</h1>
+                            <h1>FLAVORS</h1>
                         </div>
 
                         <div class="card-body">
@@ -187,7 +187,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>ksh. 550</td>
+                                    <td>ksh. 500</td>
                                     <td>ksh. 800</td>
                                     <td>ksh. 1100</td>
                                 </tr>
@@ -200,8 +200,11 @@
                 <div class="col-md-3">
                     <h2>MAKE AN ORDER</h2>
                     <form id="contactform" action="#" method="post">
-                        <p><i> (Select your flavour, Crust and Toppings in the checkbox.)</i> </p>
+                        <p><i> (Select your flavor, Crust and Toppings in the checkbox.)</i> </p>
                         <input type="text" name="person-name" id="person-name" placeholder="Name.." required /><br><br>
+                        <input type="number" name="phone-number" id="phone-number" placeholder="phone number"
+                            required /> <br><br>
+                        <input type="text" name="location" id="location" placeholder="location" required /><br><br>
                         <label for="Pizzas">Pizza-Size:</label>
                         <select id="sizes" name="pizza-size">
                             <option value="small">small</option>
@@ -211,15 +214,39 @@
                         <br><br><br>
                         <div id="buttons">
                             <button class="btn btn-primary btn-outline-primary btn-success text-white" type="submit"
-                                id="submit">Submit</button>
-                            <button class="btn btn-outline-warning  btn-danger text-white" type="reset"
-                                id="clear">Checkout</button>
+                                id="p-order">Place Order</button>
                         </div>
                     </form>
                     <br><br><br>
                     <div class="orders">
                         <h3>YOUR ODERS ARE:</h3>
+                        <div class="cart">
+                            <a href="#"><img src="./Images/pizzacart.png" width="100"></a>
+                            <table class="table table-sm pizzatable">
+                                <div id="shown1">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Flavor</th>
+                                        <th scope="col">Size</th>
+                                        <th scope="col">Crust</th>
+                                        <th scope="col">Topping</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        </div>
 
+                        <div id="Full-cost">            
+                        <p id="cost"></p>
+                        <p id="d-fee"></p>
+                        </div>
+                        <button class="btn btn-outline-warning  btn-danger text-white" type="reset"
+                            id="clear">Checkout</button>
+                             <div id="on-checkout">
+                                 <button id="b1">Continue</button>
+                                 <button id="b2">Cancel</button>
+                             </div>
                     </div>
                 </div>
             </div>
