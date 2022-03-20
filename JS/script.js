@@ -8,7 +8,7 @@ function pizza(pizzaFlavor, crustType, pizzaSize, toppings, totalAmount) {
     this.crustName = crustType;
     this.sizeName = pizzaSize;
     this.toppingName = toppings;
-    this. pizzaNumber = totalAmount
+    this.totalAmount = totalAmount
 }
 
 $(document).ready(function () {
@@ -52,24 +52,17 @@ $("#submit").click(function () {
     $("#odersTaken").show();
       $("#ordersTaken").append(
           "<tr>" +
-          '<td scope="orderCalculation">' +
+          '<td scope="orders">' +
           orders.pizzaFlavor +
           "</td>" +
           "<td>" +
           orders.pizzaSize +
           "</td>" +
           "<td>" +
-          orders.crustType +
-          " @ " +
           orders.pizzaCrust +
           "</td>" +
           "<td>" +
           orders.toppings +
-          " @ " +
-          orders.pizzaTopping +
-          "</td>" +
-          "<td>" +
-          orders.PizzaNumber +
           "</td>" +
           "<td>" +
           orders.totalAmount +
