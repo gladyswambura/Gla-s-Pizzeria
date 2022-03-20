@@ -88,7 +88,7 @@ $("#finiish").click(function (event) {
     tel = telephoneNumber
     NameOfCustomer = fullName;
     
-   alert("Dear " + fullName + " "  + "Your" + " " + pizzaFlavor + " " + "that" + "costs ksh." + totalAmount + " " + 
+   alert("Dear " + fullName + " "  + "Your" + " " + pizzaFlavor + " " + "that" + " " + "costs ksh." + " " + totalAmount + " " + 
     "will be delivered within thirty minutes." + "thank you for shopping with us" + "  "  + "regards (gla's Pizeria)" );
     event.preventDefault();
 
