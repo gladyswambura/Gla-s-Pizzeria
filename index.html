@@ -205,129 +205,142 @@
 
         <!-- order card -->
         <section id="order-now">
-                <div class="row2">
+            <div class="row2">
 
-                    <div class="col-md-6">
-                        <div class="makeorder">
-                            <h2>MAKE AN ORDER</h2>
-                            <div class="order-card">
-                                <form id="contactform" action="#" method="post">
-                                    <p><i> (Select your flavor, Crust and Toppings in the checkbox.)</i> </p>
-                                    <br>
+                <div class="col-md-6">
+                    <div class="makeorder">
+                        <h2>MAKE AN ORDER</h2>
+                        <div class="order-card">
+                            <form id="contactform" action="#" method="post">
+                                <p><i> (Select your flavor, Crust and Toppings in the checkbox.)</i> </p>
+                                <br>
 
-                                    <label for="Pizzas">Preferred Pizza Flavor:</label>
-                                    <select class="form-control form-control-sm" id="flavor">
-                                        <option>select</option>
-                                        <option value="Chicken & beef pepperoni">Chicken & beef pepperoni</option>
-                                        <option value="Chicken and Macon BBQ">Chicken and Macon BBQ</option>
-                                        <option value="Chicken Hawaiian">Chicken Hawaiian</option>
-                                        <option value="Margherita Pizza">Margherita Pizza</option>
-                                        <option value="Vegie special">Vegie special</option>
-                                        <option value="Chicken Tikka Pizza">Chicken Tikka Pizza</option>
-                                    </select>
-                                    <br>
-                                    <label for="Pizzas">Preferred Topping:</label>
-                                    <select class="form-control form-control-sm" id="toppings">
-                                        <option value="0">select</option>
-                                        <option value="50">sausage.......ksh 50</option>
-                                        <option value="300">extra cheese......ksh 300</option>
-                                        <option value="200">Mushroom......ksh 200</option>
-                                        <option value="150">Fresh Basil.....ksh 150</option>
-                                        <option value="400">Black Olives......ksh 400</option>
-                                    </select>
-                                    <br><label for="Pizzas">Exta Toppings:</label>
-                                    <select class="form-control form-control-sm" id="extra-toppings">
-                                        <option value="0">select</option>
-                                        <option value="50">sausage.......ksh 50</option>
-                                        <option value="300">extra cheese......ksh 300</option>
-                                        <option value="200">Mushroom......ksh 200</option>
-                                        <option value="150">Fresh Basil.....ksh 150</option>
-                                        <option value="400">Black Olives......ksh 400</option>
-                                    </select>
-                                    <br>
-                                    <label for="Pizzas">Preferred Crust:</label>
-                                    <select class="form-control form-control-sm" id="crust">
-                                        <option value="0">select</option>
-                                        <option value="200">cripsy......ksh. 200</option>
-                                        <option value="150">stuffed.....ksh. 150</option>
-                                        <option value="300">glutten-free.....ksh. 300</option>
-                                    </select>
-                                    <br>
-                                    <label for="Pizzas">Pizza-Size:</label>
-                                    <select id="pizza-size" name="pizza-size">
-                                        <option value="550">small</option>
-                                        <option value="800">medium</option>
-                                        <option value="1100">large</option>
-                                    </select><br><br>
-                                    <input type="number" name="pizza-number" id="pizza-number"
-                                        placeholder="Number of Pizza" required />
-                                    <br><br>
-                                    <div id="buttons">
-                                        <button class="btn btn-primary btn-outline-primary btn-success text-white"
-                                            type="button" id="submit">Place Order</button>
-                                    </div>
-                                </form>
-                            </div>
+                                <label for="Pizzas">Preferred Pizza Flavor:</label>
+                                <select class="form-control form-control-sm" id="flavor">
+                                    <option>select</option>
+                                    <option value="Chicken & beef pepperoni">Chicken & beef pepperoni</option>
+                                    <option value="Chicken and Macon BBQ">Chicken and Macon BBQ</option>
+                                    <option value="Chicken Hawaiian">Chicken Hawaiian</option>
+                                    <option value="Margherita Pizza">Margherita Pizza</option>
+                                    <option value="Vegie special">Vegie special</option>
+                                    <option value="Chicken Tikka Pizza">Chicken Tikka Pizza</option>
+                                </select>
+                                <br>
+                                <label for="Pizzas">Preferred Topping:</label>
+                                <select class="form-control form-control-sm" id="toppings">
+                                    <option value="0">select</option>
+                                    <option value="50">sausage.......ksh 50</option>
+                                    <option value="300">extra cheese......ksh 300</option>
+                                    <option value="200">Mushroom......ksh 200</option>
+                                    <option value="150">Fresh Basil.....ksh 150</option>
+                                    <option value="400">Black Olives......ksh 400</option>
+                                </select>
+                                <br><label for="Pizzas">Exta Toppings:</label>
+                                <select class="form-control form-control-sm" id="extra-toppings">
+                                    <option value="0">select</option>
+                                    <option value="50">sausage.......ksh 50</option>
+                                    <option value="300">extra cheese......ksh 300</option>
+                                    <option value="200">Mushroom......ksh 200</option>
+                                    <option value="150">Fresh Basil.....ksh 150</option>
+                                    <option value="400">Black Olives......ksh 400</option>
+                                </select>
+                                <br>
+                                <label for="Pizzas">Preferred Crust:</label>
+                                <select class="form-control form-control-sm" id="crust">
+                                    <option value="0">select</option>
+                                    <option value="200">cripsy......ksh. 200</option>
+                                    <option value="150">stuffed.....ksh. 150</option>
+                                    <option value="300">glutten-free.....ksh. 300</option>
+                                </select>
+                                <br>
+                                <label for="Pizzas">Pizza-Size:</label>
+                                <select id="pizza-size" name="pizza-size">
+                                    <option value="550">small</option>
+                                    <option value="800">medium</option>
+                                    <option value="1100">large</option>
+                                </select><br><br>
+                                <input type="number" name="pizza-number" id="pizza-number" placeholder="Number of Pizza"
+                                    required />
+                                <br><br>
+                                <div id="buttons">
+                                    <button class="btn btn-primary btn-outline-primary btn-success text-white"
+                                        type="button" id="submit">Place Order</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
+                </div>
 
 
 
-                    <!-- prices -->
-                    <div class="col-md-6">
-                        <div class="lastsection">
-                            <div class="orders">
-                                <h3><a href="#"><img src="./Images/pizzacart.png" width="100"></a>YOUR ODERS ARE: </h3>
+                <!-- prices -->
+                <div class="col-md-6">
+                    <div class="lastsection">
+                        <div class="orders">
+                            <h3><a href="#"><img src="./Images/pizzacart.png" width="100"></a>YOUR ODERS ARE: </h3>
 
-                                <div id="show">
-                                    <table class="table table-sm pizzatable">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Flavor</th>
-                                                <th scope="col">Size</th>
-                                                <th scope="col">Crust</th>
-                                                <th scope="col">Topping</th>
-                                                <th scope="col">Total</th>
-                                            </tr>
-                                        </thead>
+                            <div id="show">
+                                <table class="table table-sm pizzatable">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Flavor</th>
+                                            <th scope="col">Size</th>
+                                            <th scope="col">Crust</th>
+                                            <th scope="col">Topping</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
 
-                                        <tbody id="ordersTaken">
-                                            <!-- this part is hidden -->
-                                        </tbody>
-                                    </table>
+                                    <tbody id="ordersTaken">
+                                        <!-- this part is hidden -->
+                                    </tbody>
+                                </table>
 
-                                    <p class="deliveryCost hidden">
-                                        Delivery Cost: Ksh. <span id="delivery-cost"></span>
-                                    </p>
-                                    <p class="TotalAmount hidden">
-                                        Total Amount: Ksh. <span id="totalAmount"></span>
-                                    </p>
+                                <p class="deliveryCost hidden">
+                                    Delivery Cost: Ksh. <span id="delivery-cost"></span>
+                                </p>
+                                <p class="TotalAmount hidden">
+                                    Total Amount: Ksh. <span id="totalAmount"></span>
+                                </p>
 
-                                    <button class="btn btn-outline-warning  btn-danger text-white"
-                                        id="Checkout">Checkout</button>
+                                <button class="btn btn-outline-warning  btn-danger text-white"
+                                    id="Checkout">Checkout</button> <br><br>
 
-                                    <div class="checkout-info hidden">
-                                        <h3 id="check">Check form</h3>
-                                        <br>
-                                        <form action="" id="checkoutForm">
-                                            <input type="text" name="person-name" id="person-name" placeholder="Name.."
-                                                required /><br><br>
-                                            <input type="number" name="phone-number" id="phone-number"
-                                                placeholder="phone number" required /> <br><br>
-                                            <label for="delivery">Desired Delivery Option</label>
-                                            <select class="form-control" id="OptionDelivery" required>
-                                                <option value="deliver">Home Delivery?</option>
-                                                <option value="collect">Pick Up</option>
-                                            </select>
-                                        </form> <br>
-                                        <button type="submit" class="btn btn-success" id="deliver">Deliver</button>
+                                <div class="checkout-info hidden">
+                                    <h3 id="check">Check form</h3>
+                                    <br>
+                                    <form action="" id="checkoutForm">
+                                        <input type="text" name="person-name" id="person-name" placeholder="Name.."
+                                            required /><br><br>
+                                        <input type="number" name="phone-number" id="phone-number"
+                                            placeholder="phone number" required /> <br><br>
+                                        <label for="delivery">Desired Delivery Option</label>
+                                        <select class="form-control" id="OptionDelivery" required>
+                                            <option value="deliver">Home Delivery</option>
+                                            <option value="collect">Pick Up</option>
+                                        </select>
+                                    </form> <br>
+                                    <button type="button" class="btn btn-success" id="deliver">Deliver</button>
+
+                                    <div class="deliveryLocation hidden">
+                                        <form id="locationForm">
+                                            <h3>Enter your location</h3>
+                                             <input type="text" id="phone-number" placeholder="phone-No."
+                                                 required /><br><br>
+                                            <label for="exampleFormControlSelect1">House Number</label>
+                                            <input type="text" class="form-control" id="houseNumber"
+                                                placeholder="Enter Your Name" required />
                                     </div>
+                                    </form>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
-        </section>
+            </div>
+    </div>
+    </section>
     </div>
 
 

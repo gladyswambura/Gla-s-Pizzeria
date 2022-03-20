@@ -13,10 +13,6 @@ $(document).ready(function () {
     $("button#submit").click(function (event) {
          event.preventDefault();
 
-
-
-var fullName = $('#person-name').val();
-var telephoneNumber = $('#phone-number').val();
 var pizzaFlavor = $('#flavor option:selected').val();
 var pizzaSize = $('#pizza-size option:selected').val();
 var crustType = $('#crust option:selected').val();
@@ -48,36 +44,41 @@ $("#submit").click(function () {
           totalAmount+
           "</td>" +
           "</tr>"
-
       );
 });
+    });
+
    
 // checkout
 $("#Checkout").click(function () {
     $(".checkout-info").show();
-});
-$("#checkoutForm").submit(function (event) {
-    event.preventDefault();
-    NameOfCustomer = name;
-    var name = $("#person-name").val();
-    var deliveryOption = $("#OptionDelivery").val();
-});
+   
+
+// $("#checkoutForm").submit(function (event) {
+//     event.preventDefault();
+
+// });
 
 $("#person-name").val("");
 $("#OptionDelivery").val("");
 
-// if (deliveryOption === "deliver") {
+$("#deliver").click(function (event) {
+     event.preventDefault();
+ 
+var fullName = $('#person-name').val();
+var telephoneNumber = $('#phone-number').val();
+tel =telephoneNumber
+NameOfCustomer = fullname;
+
+var deliveryOption = $("#OptionDelivery option:selected");
+if (deliveryOption === "deliver") {
+    alert ('this is your del loc reubby')
     // $(".deliveryLocation").show();
-    // $(".deliveryCost").show();
-    // $("#totalAmount").empty();
-//     $("#delivery-cost").append(150);
-//     totalAmount += 150;
-//     $("#totalAmount").empty();
-//     $("#totalAmount").empty();
-//     $("#totalAmount").append(totalAmount);
-//     $(".TotalAmount").show();
-// } else {
-//     alert ="Dear, " + NameOfCustomer + ": Your total bill is Ksh. " + totalAmount + ".Collect your order in the next one hour." + " " + " Feel free to reach out to us anytime for questions peraining our products.");
-// // alert("Dear " + fullName + " "  + "Your" + " " + pizzaFlavor + " " + "costs ksh." + totalAmount);
+} else {
+    alert ("Dear, " + NameOfCustomer + ": Your total bill is Ksh. " + totalAmount + ".Collect your order in the next one hour." + " " + " Feel free to reach out to us anytime for questions peraining our products.");
+// alert("Dear " + fullName + " "  + "Your" + " " + pizzaFlavor + " " + "costs ksh." + totalAmount);
+};
 });
 });
+});
+
