@@ -61,24 +61,37 @@ $("#deliver").click(function (event) {
  
 var fullName = $('#person-name').val();
 var telephoneNumber = $('#phone-number').val();
-tel =telephoneNumber
+tel = telephoneNumber
 NameOfCustomer = fullName;
-
 var deliveryOption = $("#OptionDelivery option:selected").val();
 if (deliveryOption === "deliver") {
     $(".deliveryLocation").show();
 } else {
-    alert ("Dear, " + NameOfCustomer + ": Your total bill is Ksh. " + totalAmount + ".Collect your order in the next one hour." + " " + " Feel free to reach out to us anytime for questions peraining our products.");
-
-
-$("#finiish").submit(function (event) {
-    alert ("reuby")
-    event.preventDefault();
-
-});
-    // alert("Dear " + fullName + " "  + "Your" + " " + pizzaFlavor + " " + "costs ksh." + totalAmount);
+    alert ("Dear, " + fullName + "  Your total bill is Ksh. " + totalAmount + 
+    ".Collect your order in the next one hour." + " " +
+     " Feel free to reach out to us anytime for questions peraining our products.");
 };
 });
 });
+
+$("#finiish").click(function (event) {
+    var pizzaFlavor = $('#flavor option:selected').val();
+    var pizzaSize = $('#pizza-size option:selected').val();
+    var crustType = $('#crust option:selected').val();
+    var toppings = $('#toppings option:selected').val();
+    var additionalToppings = $('#extra-toppings option:selected').val();
+    var fullName = $('#person-name').val();
+    var totalAmount = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings) +
+        parseInt(additionalToppings) + parseInt(crustType));
+    var totalNumberOfPizza = $('#pizza-number').val();
+    var telephoneNumber = $('#phone-number').val();
+    tel = telephoneNumber
+    NameOfCustomer = fullName;
+    
+   alert("Dear " + fullName + " "  + "Your" + " " + pizzaFlavor + " " + "costs ksh." + totalAmount);
+    event.preventDefault();
+
+});
+
 });
 
