@@ -107,8 +107,8 @@
 }
 .card8 {
     margin-left: 3%;
-     background: rgba(0, 0, 0, 0.747);
-     color: white;
+     /* background-image: linear-gradient(to bottom, rgb(224, 182, 182), rgb(212, 62, 62)); */
+     color: black;
      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
      border-radius: 5%;
 }
@@ -134,22 +134,32 @@ td {
     border: 1px solid black;
 }
 .order-card {
-    border: 2px solid black;
-    padding-left: 2%;
+     background-image: linear-gradient(to left, rgb(231, 206, 206), rgb(212, 62, 62));
+    color: white;
+    border-radius: 5%;
+    padding: 5%;
     margin-left: 3%;
+}
+#order-now {
+     background-image: url(../Images/background3.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
 }
 .lastsection {
     padding-top: 5%;
 }  
 .orders {
+    background-color: rgba(0, 0, 0, 0.534);
+    margin-left: 5%;
     padding: 5%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 20px 29px 0px;
     border-radius: 5%;
 }
-.hidden {
-    display: none;
+.pizzatable {
+    color: white;
 }
-#checkout-info {
+.hidden {
     display: none;
 }
 #contacts {

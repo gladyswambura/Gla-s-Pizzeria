@@ -52,14 +52,7 @@ $("#submit").click(function () {
       );
 });
    
-// $("#totalAmount").fadeIn();
-// $("#Checkout").fadeIn();
-// $("#totalAmount").empty();
-// $("#totalAmount").append(totalAmount);
-// $("#totalAmount").show();
-// });
-
-
+// checkout
 $("#Checkout").click(function () {
     $(".checkout-info").show();
 });
@@ -74,9 +67,9 @@ $("#person-name").val("");
 $("#OptionDelivery").val("");
 
 // if (deliveryOption === "deliver") {
-//     $(".deliveryLocation").show();
-//     $(".deliveryCost").show();
-//     $("#totalAmount").empty();
+    // $(".deliveryLocation").show();
+    // $(".deliveryCost").show();
+    // $("#totalAmount").empty();
 //     $("#delivery-cost").append(150);
 //     totalAmount += 150;
 //     $("#totalAmount").empty();
