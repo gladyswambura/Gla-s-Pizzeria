@@ -72,8 +72,6 @@ $("#checkoutForm").submit(function (event) {
 
 $("#person-name").val("");
 $("#OptionDelivery").val("");
-$(".checkout-info").hide();
-$("#Checkout").hide();
 
 // if (deliveryOption === "deliver") {
 //     $(".deliveryLocation").show();
