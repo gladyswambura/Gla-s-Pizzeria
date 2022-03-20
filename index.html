@@ -298,9 +298,7 @@
 
             <div class="col-md-4">
                 <div class="orders">
-                    <h3>YOUR ODERS ARE:</h3>
-                    <div class="cart">
-                        <a href="#"><img src="./Images/pizzacart.png" width="100"></a>
+                    <h3><a href="#"><img src="./Images/pizzacart.png" width="100"></a>YOUR ODERS ARE: </h3>
 
                         <div id="show">
                             <table class="table table-sm pizzatable">
@@ -313,34 +311,32 @@
                                         <th scope="col">Total</th>
                                     </tr>
                                 </thead>
-                                <tbody id="customer-order">
-                                    <tr>
-                                        <td id="flavor-p"></td>
-                                        <td id="size-p"></td>
-                                        <td id="crust-p"></td>
-                                        <td id="topping-p"></td>
-                                        <td id="totals"></td>
-                                    </tr>
+
+                                <tbody id="ordersTaken">
+                                    <!-- this part is hidden -->
                                 </tbody>
+
+                                </table>
+                                <p class="deliveryCost hidden">
+                                    Delivery Cost: Ksh. <span id="delivery-cost"></span>
+                                </p>
+                                <p class="TotalAmount hidden">
+                                    Total Amount: Ksh. <span id="totalAmount"></span>
+                                </p>
+
+                                 <button class="btn btn-outline-warning  btn-danger text-white" id="Checkout"
+                                     onclick="myPizza()">Checkout</button>
+                                     
+                                 <div class="checkout-info hidden">
+                                     <h3 id="check">Check form</h3>
+                                     <form action="" id="checkoutForm">
                             </table>
                         </div>
                     </div>
 
-                    <div id="Full-cost">
-                        <p id="cost"></p>
-                        <p id="delivery-fee"></p>
-                        <button class="btn btn-outline-warning  btn-danger text-white">Checkout</button>
-                        <div id="on-checkout">
-                            <button id="b1">Continue</button>
-                            <button id="b2">Cancel</button>
-                        </div>
+                    
 
-                        <form id="delivery-form" action="">
-                            
-                            <br><br>
-                            <input type="text" name="location" id="location" placeholder="location" required /><br><br>
-                        </form>
-                    </div>
+
                 </div>
             </div>
             <div class="col-md-4">

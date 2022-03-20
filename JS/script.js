@@ -26,14 +26,26 @@ var toppings = $('#toppings option:selected').val();
 var additionalToppings = $('#extra-toppings option:selected').val();
 var totalNumberOfPizza = $('#pizza-number').val();
 
-let totalsAmount = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings) +
+var totalAmount = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings) +
     parseInt(additionalToppings) + parseInt(crustType) + deliveryFee);
 
     // display summary
  $("#ordersTaken").append("");
- if (totalsAmount.length > 0) {
+ if (totalAmount.length > 0) {
      $("#form-heading").empty();
      $("#form-heading").append("Make A New Order");
+ }
+
+$("#totalAmount").fadeIn();
+$("#Checkout").fadeIn();
+$("#totalAmount").empty();
+$("#totalAmount").append(totalAmount);
+$("#totalAmount").show();
+});
+
+$("#Checkout").click(function () {
+    $(".checkout-info").show();
+});
      
 alert("Dear " + fullName + "Your" + pizzaFlavor + " " + telephoneNumber + totalsOfPizza);
 
@@ -42,85 +54,4 @@ alert("Dear " + fullName + "Your" + pizzaFlavor + " " + telephoneNumber + totals
 });
 
 
-
-//       var pizzaPrice = new Array(500, 800, 1100);
-//       Pizza.prototype.totalPrice = function () {
-//           return (this.crustName + this.toppingName + this.sizeName) * this.pizzaNumber
-//       };
-
-//         //  size
-//       Pizza.prototype.pizzaS = function () {
-//           if (this.sizeName == 1100) {
-//               return "Large"
-
-//           } else if (this.sizeName == 800) {
-//               return "Medium"
-
-//           } else if (this.sizeName == 500) {
-//               return "Small"
-//           }
-//       }
-
-//     //   crust
-//     Pizza.prototype.pizzaC = function () {
-//         if (this.crustName == 250) {
-//             return "cripsy"
-
-//         } else if (this.crustName == 350) {
-//             return "stuffed"
-
-//         } else if (this.crustName == 300) {
-//             return "Glutten-free"
-//         }
-//     }
-
-//     // topping
-//     Pizza.prototype.pizzaT = function () {
-//         if (this.toppingName == 300) {
-//             return "Extra-cheese"
-//         } else if (this.toppingName == 200) {
-//             return "Mushrooms"
-//         } else if (this.toppingName == 150) {
-//             return "Fresh Basil"
-//         } else if (this.toppingName == 400) {
-//                  return "Black olives"
-//         }
-//     }
-
-//     $("#checkout").click(function (event) {
-
-//                 var flavorName = $("#Flavour").val();
-
-//                 var sizeName = parseInt($("#Size").val());
-
-//                 var crustName = parseInt($("#Crust").val());
-
-//                 var toppingName = parseInt($("#Topping").val());
-
-//                 var PizzaNumber = parseInt($("#number").val());
-
-
-//   var newTotal = new Pizza(flavorName, sizeName, crustName, toppingName, PizzaNumber);
-
-//  console.log(newTotal)
-
-//  console.log(newTotal.flavorName)
-//  total.push(newTotal);
-//  console.log(total)
-
-// $("#Flavour").val("");
-// $("#Size").val("");
-// $("#Crust").val("");
-// $("#Topping").val("");
-// $("#number").val("");
-
-// totalAmount = 0
-// for (let i = 0; i < total.length; i++) {
-//     totalAmount += total[i].totalPrice();
-//     console.log(totalAmount)
-// }
-
-// var newRow = '<tr><th scope="row">' + newPizza.orderNo + '</th><td id="size">' + $(".size option:selected").text() + " - " + newPizza.size + '</td><td id="toppings">' + $(".toppings option:selected").text() + " - " + newPizza.toppings + '</td><td id="crust">' + $(".crust option:selected").text() + " - " + newPizza.crust + '</td><td id="total">' + newPizza.total + '</td></tr>'
-
-// $("#pizza").append(newRow);
 
