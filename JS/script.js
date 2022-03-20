@@ -3,12 +3,12 @@ var deliveryFee = 200;
 // var crustPrice = new Array(250, 350, 300);
 // var toppingsPrice = new Array(300, 200, 150, 400);
 
-function totalPrices(flavorName, crustName, sizeName, toppingName, pizzaNumber) {
-    this.flavorName = flavorName;
-    this.crustName = crustName;
-    this.sizeName = sizeName;
-    this.toppingName = toppingName;
-    this. pizzaNumber = pizzaNumber
+function pizza(pizzaFlavor, crustType, pizzaSize, toppings, totalAmount) {
+    this.pizzaFlavor = pizzaFlavor;
+    this.crustName = crustType;
+    this.sizeName = pizzaSize;
+    this.toppingName = toppings;
+    this. pizzaNumber = totalAmount
 }
 
 $(document).ready(function () {
@@ -29,25 +29,63 @@ var totalNumberOfPizza = $('#pizza-number').val();
 var totalAmount = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings) +
     parseInt(additionalToppings) + parseInt(crustType) + deliveryFee);
 
-    // display summary
- $("#ordersTaken").append("");
- if (totalAmount.length > 0) {
-     $("#form-heading").empty();
-     $("#form-heading").append("Make A New Order");
- }
+//     // display summary
+//  $("#ordersTaken").append("");
+//  if (totalAmount.length > 0) {
+//      $("#form-heading").empty();
+//      $("#form-heading").append("Make A New Order");
+//  }
 
-$("#totalAmount").fadeIn();
-$("#Checkout").fadeIn();
-$("#totalAmount").empty();
-$("#totalAmount").append(totalAmount);
-$("#totalAmount").show();
-});
 
-$("#Checkout").click(function () {
-    $(".checkout-info").show();
+
+// $("#totalAmount").fadeIn();
+// $("#Checkout").fadeIn();
+// $("#totalAmount").empty();
+// $("#totalAmount").append(totalAmount);
+// $("#totalAmount").show();
+// });
+
+
+var orders = new pizza(pizzaFlavor, pizzaSize, crustType, toppings, totalAmount);
+
+$("#submit").click(function () {
+    $("#odersTaken").show();
+      $("#ordersTaken").append(
+          "<tr>" +
+          '<td scope="orderCalculation">' +
+          orders.pizzaFlavor +
+          "</td>" +
+          "<td>" +
+          orders.pizzaSize +
+          "</td>" +
+          "<td>" +
+          orders.crustType +
+          " @ " +
+          orders.pizzaCrust +
+          "</td>" +
+          "<td>" +
+          orders.toppings +
+          " @ " +
+          orders.pizzaTopping +
+          "</td>" +
+          "<td>" +
+          orders.PizzaNumber +
+          "</td>" +
+          "<td>" +
+          orders.totalAmount +
+          "</td>" +
+          "</tr>"
+
+      );
 });
-     
-alert("Dear " + fullName + "Your" + pizzaFlavor + " " + telephoneNumber + totalsOfPizza);
+   
+// $("#checkoutForm").submit(function (event) {
+//     event.preventDefault();
+//     var name = $("#name").val();
+//     var deliveryOption = $("#OptionDelivery").val();
+// }
+
+// alert("Dear " + fullName + " "  + "Your" + " " + pizzaFlavor + " " + "costs ksh." + totalAmount);
 
 
 });

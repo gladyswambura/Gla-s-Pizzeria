@@ -271,8 +271,6 @@
                                 <br><br>
                                 <input type="text" name="person-name" id="person-name" placeholder="Name.."
                                     required /><br><br>
-                                <input type="number" name="phone-number" id="phone-number" placeholder="phone number"
-                                    required /> <br><br>
                                 <div id="buttons">
                                     <button class="btn btn-primary btn-outline-primary btn-success text-white"
                                         type="button" id="submit">Place Order</button>
@@ -315,8 +313,8 @@
                                 <tbody id="ordersTaken">
                                     <!-- this part is hidden -->
                                 </tbody>
-
                                 </table>
+
                                 <p class="deliveryCost hidden">
                                     Delivery Cost: Ksh. <span id="delivery-cost"></span>
                                 </p>
@@ -326,17 +324,26 @@
 
                                  <button class="btn btn-outline-warning  btn-danger text-white" id="Checkout"
                                      onclick="myPizza()">Checkout</button>
-                                     
+
                                  <div class="checkout-info hidden">
                                      <h3 id="check">Check form</h3>
                                      <form action="" id="checkoutForm">
-                            </table>
+                                     </div>
+                                     
+                                      <br><br>
+                                  <div class="final-form">
+                                       <input type="number" name="phone-number" id="phone-number"
+                                           placeholder="phone number" required /> <br><br>
+                                           <label for="delivery">Desired Delivery Option</label>
+                                           <select class="form-control" id="OptionDelivery" required>
+                                               <option value="deliver">Home Delivery?</option>
+                                               <option value="collect">Pick Up</option>
+                                           </select>
+                                        </div>
+                                           <button type="submit" class="btn btn-success"
+                                               id="final-option">Deliver</button>     
                         </div>
                     </div>
-
-                    
-
-
                 </div>
             </div>
             <div class="col-md-4">
