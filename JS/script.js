@@ -69,7 +69,7 @@ if (deliveryOption === "deliver") {
 } else {
     alert ("Dear, " + fullName + "  Your total bill is Ksh. " + totalAmount + 
     ".Collect your order in the next one hour." + " " +
-     " Feel free to reach out to us anytime for questions peraining our products.");
+     " Feel free to reach out to us anytime for questions pertaining our products.");
 };
 });
 });
@@ -88,7 +88,8 @@ $("#finiish").click(function (event) {
     tel = telephoneNumber
     NameOfCustomer = fullName;
     
-   alert("Dear " + fullName + " "  + "Your" + " " + pizzaFlavor + " " + "costs ksh." + totalAmount);
+   alert("Dear " + fullName + " "  + "Your" + " " + pizzaFlavor + " " + "that" + "costs ksh." + totalAmount + " " + 
+    "will be delivered within thirty minutes." + "thank you for shopping with us" + "  "  + "regards (gla's Pizeria)" );
     event.preventDefault();
 
 });
