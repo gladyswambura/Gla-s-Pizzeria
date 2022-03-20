@@ -1,7 +1,7 @@
 var total = [];
 var deliveryFee = 200;
 // var crustPrice = new Array(250, 350, 300);
-// var toppingsPrice = new Array(50, 300, 200, 150, 400);
+// var toppingsPrice = new Array(300, 200, 150, 400);
 
 function totalPrices(flavorName, crustName, sizeName, toppingName, pizzaNumber) {
     this.flavorName = flavorName;
@@ -50,9 +50,7 @@ $(document).ready(function () {
 
     // topping
     Pizza.prototype.pizzaT = function () {
-        if (this.toppingName == 50) {
-            return "sausage"
-        } else if (this.toppingName == 300) {
+        if (this.toppingName == 300) {
             return "Extra-cheese"
         } else if (this.toppingName == 200) {
             return "Mushrooms"

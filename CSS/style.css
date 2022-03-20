@@ -105,12 +105,27 @@
    filter: contrast(100%);
    color: white;
 }
-
+.card8 {
+    margin-left: 3%;
+     background: rgba(0, 0, 0, 0.747);
+     color: white;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     border-radius: 5%;
+}
 input[type=checkbox] {
     transform: scale(2.0);
 }
+.toppings {
+    padding-left: 30%;
+}
 #words {
     padding: 6%;
+}
+#order-now {
+    padding-top: 5%;
+}
+.makeorder h2{
+    padding-left: 40%;
 }
 
 table,
@@ -122,4 +137,12 @@ td {
     border: 2px solid black;
     padding-left: 2%;
     margin-left: 3%;
+}
+.lastsection {
+    padding-top: 5%;
+}  
+.orders {
+    padding: 5%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5%;
 }
