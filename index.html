@@ -306,11 +306,8 @@
                                     </tbody>
                                 </table>
 
-                                <p class="deliveryCost hidden">
-                                    Delivery Cost: Ksh. <span id="delivery-cost"></span>
-                                </p>
-                                <p class="TotalAmount hidden">
-                                    Total Amount: Ksh. <span id="totalAmount"></span>
+                                <p class="TotalAmount hidden" id="totalAmount">
+                                    Total Amount: Ksh. 
                                 </p>
 
                                 <button class="btn btn-outline-warning  btn-danger text-white"
@@ -324,7 +321,7 @@
                                         <input type="text" name="person-name" id="person-name" placeholder="Name.."
                                             required /><br><br>
                                         <label for="delivery">Desired Option: </label>
-                                        <select class="form-control" id="OptionDelivery" required>
+                                        <select class="form-control" id="optionDelivery" required>
                                             <option value="deliver">Home Delivery</option>
                                             <option value="collect">Pick Up</option>
                                         </select>
