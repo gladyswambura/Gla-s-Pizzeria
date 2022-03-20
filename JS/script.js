@@ -38,24 +38,28 @@ $(document).ready(function () {
     //   crust
     Pizza.prototype.pizzaC = function () {
         if (this.crustName == 250) {
-            return "Thin"
+            return "cripsy"
 
         } else if (this.crustName == 350) {
-            return "Thick"
+            return "stuffed"
 
         } else if (this.crustName == 300) {
-            return "Stuffed"
+            return "Glutten-free"
         }
     }
 
     // topping
     Pizza.prototype.pizzaT = function () {
-        if (this.toppingName == 150) {
-            return "Potato"
-        } else if (this.toppingName == 170) {
-            return "Mushrooms"
+        if (this.toppingName == 50) {
+            return "sausage"
+        } else if (this.toppingName == 300) {
+            return "Extra-cheese"
         } else if (this.toppingName == 200) {
-            return "Black olives"
+            return "Mushrooms"
+        } else if (this.toppingName == 150) {
+            return "Fresh Basil"
+        } else if (this.toppingName == 400) {
+                 return "Black olives"
         }
     }
 
@@ -77,7 +81,7 @@ $(document).ready(function () {
  console.log(newTotal)
 
  console.log(newTotal.flavorName)
- OrderNew.push(newTotal);
+ total.push(newTotal);
  console.log(total)
 
 $("#Flavour").val("");
@@ -86,4 +90,13 @@ $("#Crust").val("");
 $("#Topping").val("");
 $("#number").val("");
 
+totalAmount = 0
+for (let i = 0; i < total.length; i++) {
+    totalAmount += total[i].totalPrice();
+    console.log(totalAmount)
 }
+
+var newRow = '<tr><th scope="row">' + newPizza.orderNo + '</th><td id="size">' + $(".size option:selected").text() + " - " + newPizza.size + '</td><td id="toppings">' + $(".toppings option:selected").text() + " - " + newPizza.toppings + '</td><td id="crust">' + $(".crust option:selected").text() + " - " + newPizza.crust + '</td><td id="total">' + newPizza.total + '</td></tr>'
+
+$("#pizza").append(newRow);
+

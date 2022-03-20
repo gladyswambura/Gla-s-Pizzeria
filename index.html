@@ -70,154 +70,162 @@
 
         <!--..section2..-->
         <section id="section2">
-            <div class="sec2content row">
-                <div class="col-md-4">
-                    <div class="card">
+            <div class="row2">
 
+                <div class="col-md-1">
+
+                </div>
+
+                <div class="col-md-10">
+                    <div class="card">
                         <div class="card-title">
-                            <h1>OUR MENU</h1>
+                            <h1>MENU</h1>
                         </div>
 
                         <div class="card-body">
                             <div class="row1">
 
-                                <div id="card1">
-                                    <div id="words">
-                                        <p>Chicken & Beef <br> Pepperoni</p>
-                                        <img src="./Images/pepperoni.png" alt="Pepperoni" width="130">
+                                <div class="card1" style="width: 25rem;">
+                                    <img src="./Images/1.jpeg" class="card-img-top" alt="Pepperoni">
+                                    <div class="card-body">
+                                        <p class="card-text">Chicken $ beef pepperoni.</p>
                                     </div>
                                 </div>
 
-                                <div id="card2">
-                                    <div id="words">
-                                        <p>Chicken & Macon <br> BBQ</p>
-                                        <img src="./Images/BBQ.png" alt="BBQ" width="150">
+                                <div class="card2" style="width: 25rem;">
+                                    <img src="./Images/2.jpg" class="card-img-top" alt="BBQ">
+                                    <div class="card-body">
+                                        <p class="card-text">Chicken & Macon <br> BBQ</p>
                                     </div>
                                 </div>
 
-                                <div id="card3">
-                                    <div id="words">
-                                        <p>Chicken Tikka</p><br>
-                                        <img src="./Images/tikka.png" alt="Tikka" width="150">
+                                <div class="card3" style="width: 28rem;">
+                                    <img src="./Images/3.jpg" class="card-img-top" alt="BBQ">
+                                    <div class="card-body">
+                                        <p class="card-text">Chicken Tikka</p>
                                     </div>
                                 </div>
+
                             </div>
-                            <br><br><br>
+                            <br>
                             <div class="row2">
 
-                                <div id="card4">
-                                    <div id="words">
-                                        <p>Chicken Hawaiian</p>
-                                        <img src="./Images/Hawaiian.png" alt="Hawaiian" width="120">
+                                <div class="card4" style="width: 40rem;">
+                                    <img src="./Images/8.jpeg" class="card-img-top" alt="BBQ">
+                                    <div class="card-body">
+                                        <p class="card-text">Chicken Hawaiian</p>
                                     </div>
                                 </div>
 
-                                <div id="card5">
-                                    <div id="words">
-                                        <p>Pure Vegie Pizza</p>
-                                        <img src="./Images/vegie.png" alt="vegie" width="150">
+                                <div class="card5" style="width: 40rem;">
+                                    <img src="./Images/6.jpeg" class="card-img-top" alt="BBQ">
+                                    <div class="card-body">
+                                        <p class="card-text">Margherita pizza</p>
                                     </div>
                                 </div>
 
-                                <div id="card6">
-                                    <div id="words">
-                                        <p>Margherita pizza</p>
-                                        <img src="./Images/Margherita.png" alt="Margherita" width="140">
-                                    </div>
-                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
 
+                <div class="col-md-1">
 
-                <!-- toppings -->
+                </div>
+        </section>
+        <br><br> <br><br>
+
+        <section class="sectopn3">
+            <!-- toppings -->
+            <div class="row">
                 <div class="col-md-3">
                     <h1>TOPPINGS</h1>
-                    <input type="checkbox" name="pizza[]" value="pizza" checked> ---Sausage..........ksh 50<br><br>
-                    <input type="checkbox" name="pizza[]" value="pizza"> ---Cheese...........ksh 300<br><br>
-                    <input type="checkbox" name="pizza[]" value="pizza"> ---Mushroom.........ksh 200<br><br>
-                    <input type="checkbox" name="pizza[]" value="pizza"> ---Fresh Basil......ksh 150<br><br>
-                    <input type="checkbox" name="pizza[]" value="pizza"> ---Black OLives.....ksh 400 <br>
-                    <div class="prices">
-
-                        <img src="./Images/pizzasizes.png" alt="prices" width="300"><br>
-                        <table style="width:100%">
-                            <h4>PRICES PER SIZE</h4>
-                            <thead>
-                                <th>small</th>
-                                <th>Medium</th>
-                                <th>Large</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>ksh. 500</td>
-                                    <td>ksh. 800</td>
-                                    <td>ksh. 1100</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <input type="checkbox" name="pizza[]" value="pizza" checked>
+                    ---Sausage..........ksh 50<br><br>
+                    <input type="checkbox" name="pizza[]" value="pizza"> ---Cheese...........ksh
+                    300<br><br>
+                    <input type="checkbox" name="pizza[]" value="pizza"> ---Mushroom.........ksh
+                    200<br><br>
+                    <input type="checkbox" name="pizza[]" value="pizza"> ---Fresh Basil......ksh
+                    150<br><br>
+                    <input type="checkbox" name="pizza[]" value="pizza"> ---Black OLives.....ksh 400
+                    <br>
                 </div>
+                <div class="prices">
 
-                <!-- order card -->
-                <div class="col-md-4 order-card">
-                    <h2>MAKE AN ORDER</h2>
-                    <form id="contactform" action="#" method="post">
-                        <p><i> (Select your flavor, Crust and Toppings in the checkbox.)</i> </p>
-                        <input type="number" name="pizza-number" id="pizza-number" placeholder="Number of Pizza"
-                            required />
-                        <br><br><br>
-
-                        <label for="Pizzas">Preferred Pizza Flavor:</label>
-                        <select class="form-control form-control-sm" id="crust">
-                            <option>select</option>
-                            <option value="small">Chicken & beef pepperoni</option>
-                            <option value="medium">Chicken and Macon BBQ</option>
-                            <option value="large">Chicken Hawaiian</option>
-                            <option value="large">Margherita Pizza</option>
-                            <option value="large">Vegie special</option>
-                            <option value="large">Chicken Tikka Pizza</option>
-                        </select>
-                        <br>
-                        <label for="Pizzas">Preferred Topping:</label>
-                        <select class="form-control form-control-sm" id="crust">
-                            <option>select</option>
-                            <option value="small">sausage.......ksh 50</option>
-                            <option value="medium">extra cheese......ksh 300</option>
-                            <option value="large">Mushroom......ksh 200</option>
-                            <option value="large">Fresh Basil.....ksh 150</option>
-                            <option value="large">Black Olives......ksh 400</option>
-                        </select>
-                        <br>
-                        <label for="Pizzas">Preferred Crust:</label>
-                        <select class="form-control form-control-sm" id="crust">
-                            <option>select</option>
-                            <option value="small">cripsy......ksh. 200</option>
-                            <option value="medium">stuffed.....ksh. 150</option>
-                            <option value="large">glutten-free.....ksh. 300</option>
-                        </select>
-                        <br>
-                        <label for="Pizzas">Pizza-Size:</label>
-                        <select id="sizes" name="pizza-size">
-                            <option value="small">small</option>
-                            <option value="medium">medium</option>
-                            <option value="large">large</option>
-                        </select><br><br>
-                        <br><br>
-                        <div id="buttons">
-                            <button class="btn btn-primary btn-outline-primary btn-success text-white" type="button"
-                                id="checkout">Place Order</button>
-                        </div>
-                    </form>
+                    <img src="./Images/pizzasizes.png" alt="prices" width="300"><br>
+                    <table style="width:100%">
+                        <h4>PRICES PER SIZE</h4>
+                        <thead>
+                            <th>small</th>
+                            <th>Medium</th>
+                            <th>Large</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ksh. 500</td>
+                                <td>ksh. 800</td>
+                                <td>ksh. 1100</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
-
-            </div>
-
         </section>
-        <br><br> <br><br> <br>
+
+        <!-- order card -->
+        <div class="col-md-4 order-card">
+            <h2>MAKE AN ORDER</h2>
+            <form id="contactform" action="#" method="post">
+                <p><i> (Select your flavor, Crust and Toppings in the checkbox.)</i> </p>
+                <input type="number" name="pizza-number" id="pizza-number" placeholder="Number of Pizza" required />
+                <br><br><br>
+
+                <label for="Pizzas">Preferred Pizza Flavor:</label>
+                <select class="form-control form-control-sm" id="crust">
+                    <option>select</option>
+                    <option value="small">Chicken & beef pepperoni</option>
+                    <option value="medium">Chicken and Macon BBQ</option>
+                    <option value="large">Chicken Hawaiian</option>
+                    <option value="large">Margherita Pizza</option>
+                    <option value="large">Vegie special</option>
+                    <option value="large">Chicken Tikka Pizza</option>
+                </select>
+                <br>
+                <label for="Pizzas">Preferred Topping:</label>
+                <select class="form-control form-control-sm" id="crust">
+                    <option>select</option>
+                    <option value="small">sausage.......ksh 50</option>
+                    <option value="medium">extra cheese......ksh 300</option>
+                    <option value="large">Mushroom......ksh 200</option>
+                    <option value="large">Fresh Basil.....ksh 150</option>
+                    <option value="large">Black Olives......ksh 400</option>
+                </select>
+                <br>
+                <label for="Pizzas">Preferred Crust:</label>
+                <select class="form-control form-control-sm" id="crust">
+                    <option>select</option>
+                    <option value="small">cripsy......ksh. 200</option>
+                    <option value="medium">stuffed.....ksh. 150</option>
+                    <option value="large">glutten-free.....ksh. 300</option>
+                </select>
+                <br>
+                <label for="Pizzas">Pizza-Size:</label>
+                <select id="sizes" name="pizza-size">
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+                </select><br><br>
+                <br><br>
+                <div id="buttons">
+                    <button class="btn btn-primary btn-outline-primary btn-success text-white" type="button"
+                        id="checkout">Place Order</button>
+                </div>
+            </form>
+        </div>
+
+
+
+
 
 
 
@@ -288,3 +296,4 @@
 </body>
 
 </html>
+<div class="sec2content row"></div>

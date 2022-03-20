@@ -93,14 +93,19 @@
 .card {
     background: transparent;
     border: none;
-   
 }
-#card1, #card2, #card3, #card4, #card5, #card6 {
-    border: 2px solid black;
+.card .card-title {
+    padding-left: 45%;
+    text-decoration: underline rgb(212, 62, 62) 10px;
+}
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    background: rgb(212, 62, 62);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
    border-radius: 5%;
    filter: contrast(100%);
-   
+   color: white;
 }
+
 input[type=checkbox] {
     transform: scale(2.0);
 }
