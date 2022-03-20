@@ -52,12 +52,6 @@ $("#submit").click(function () {
 // checkout
 $("#Checkout").click(function () {
     $(".checkout-info").show();
-   
-
-// $("#checkoutForm").submit(function (event) {
-//     event.preventDefault();
-
-// });
 
 $("#person-name").val("");
 $("#OptionDelivery").val("");
@@ -68,15 +62,21 @@ $("#deliver").click(function (event) {
 var fullName = $('#person-name').val();
 var telephoneNumber = $('#phone-number').val();
 tel =telephoneNumber
-NameOfCustomer = fullname;
+NameOfCustomer = fullName;
 
-var deliveryOption = $("#OptionDelivery option:selected");
+var deliveryOption = $("#OptionDelivery option:selected").val();
 if (deliveryOption === "deliver") {
-    alert ('this is your del loc reubby')
-    // $(".deliveryLocation").show();
+    $(".deliveryLocation").show();
 } else {
     alert ("Dear, " + NameOfCustomer + ": Your total bill is Ksh. " + totalAmount + ".Collect your order in the next one hour." + " " + " Feel free to reach out to us anytime for questions peraining our products.");
-// alert("Dear " + fullName + " "  + "Your" + " " + pizzaFlavor + " " + "costs ksh." + totalAmount);
+
+
+$("#finiish").submit(function (event) {
+    alert ("reuby")
+    event.preventDefault();
+
+});
+    // alert("Dear " + fullName + " "  + "Your" + " " + pizzaFlavor + " " + "costs ksh." + totalAmount);
 };
 });
 });

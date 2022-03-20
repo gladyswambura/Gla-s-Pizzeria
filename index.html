@@ -312,8 +312,6 @@
                                     <form action="" id="checkoutForm">
                                         <input type="text" name="person-name" id="person-name" placeholder="Name.."
                                             required /><br><br>
-                                        <input type="number" name="phone-number" id="phone-number"
-                                            placeholder="phone number" required /> <br><br>
                                         <label for="delivery">Desired Delivery Option</label>
                                         <select class="form-control" id="OptionDelivery" required>
                                             <option value="deliver">Home Delivery</option>
@@ -325,11 +323,13 @@
                                     <div class="deliveryLocation hidden">
                                         <form id="locationForm">
                                             <h3>Enter your location</h3>
-                                             <input type="text" id="phone-number" placeholder="phone-No."
-                                                 required /><br><br>
                                             <label for="exampleFormControlSelect1">House Number</label>
                                             <input type="text" class="form-control" id="houseNumber"
-                                                placeholder="Enter Your Name" required />
+                                                placeholder="Enter Your Name" required /> <br><br>
+                                                <input type="text" id="phone-number" placeholder="phone-No."
+                                                    required />
+                                     <button type="submit" class="btn btn-outline-warning  btn-danger text-white"
+                                         id="finiish">submit</button>
                                     </div>
                                     </form>
                                 </div>
