@@ -220,49 +220,62 @@
                         <div class="order-card">
                             <form id="contactform" action="#" method="post">
                                 <p><i> (Select your flavor, Crust and Toppings in the checkbox.)</i> </p>
-                                <input type="number" name="pizza-number" id="pizza-number" placeholder="Number of Pizza"
-                                    required />
-                                <br><br><br>
+                                <br>
 
                                 <label for="Pizzas">Preferred Pizza Flavor:</label>
-                                <select class="form-control form-control-sm" id="crust">
+                                <select class="form-control form-control-sm" id="flavor">
                                     <option>select</option>
-                                    <option value="small">Chicken & beef pepperoni</option>
-                                    <option value="medium">Chicken and Macon BBQ</option>
-                                    <option value="large">Chicken Hawaiian</option>
-                                    <option value="large">Margherita Pizza</option>
-                                    <option value="large">Vegie special</option>
-                                    <option value="large">Chicken Tikka Pizza</option>
+                                    <option value="Chicken & beef pepperoni">Chicken & beef pepperoni</option>
+                                    <option value="Chicken and Macon BBQ">Chicken and Macon BBQ</option>
+                                    <option value="type">Chicken Hawaiian</option>
+                                    <option value="type">Margherita Pizza</option>
+                                    <option value="type">Vegie special</option>
+                                    <option value="type">Chicken Tikka Pizza</option>
                                 </select>
                                 <br>
                                 <label for="Pizzas">Preferred Topping:</label>
-                                <select class="form-control form-control-sm" id="crust">
+                                <select class="form-control form-control-sm" id="toppings">
+                                     <option>select</option>
+                                     <option value="50">sausage.......ksh 50</option>
+                                     <option value="300">extra cheese......ksh 300</option>
+                                     <option value="200">Mushroom......ksh 200</option>
+                                     <option value="150">Fresh Basil.....ksh 150</option>
+                                     <option value="400">Black Olives......ksh 400</option>
+                                     </select>
+                                <br><label for="Pizzas">Exta Toppings:</label>
+                                <select class="form-control form-control-sm" id="extra-toppings">
                                     <option>select</option>
-                                    <option value="small">sausage.......ksh 50</option>
-                                    <option value="medium">extra cheese......ksh 300</option>
-                                    <option value="large">Mushroom......ksh 200</option>
-                                    <option value="large">Fresh Basil.....ksh 150</option>
-                                    <option value="large">Black Olives......ksh 400</option>
+                                    <option value="50">sausage.......ksh 50</option>
+                                    <option value="300">extra cheese......ksh 300</option>
+                                    <option value="200">Mushroom......ksh 200</option>
+                                    <option value="150">Fresh Basil.....ksh 150</option>
+                                    <option value="400">Black Olives......ksh 400</option>
                                 </select>
                                 <br>
                                 <label for="Pizzas">Preferred Crust:</label>
                                 <select class="form-control form-control-sm" id="crust">
                                     <option>select</option>
-                                    <option value="small">cripsy......ksh. 200</option>
-                                    <option value="medium">stuffed.....ksh. 150</option>
-                                    <option value="large">glutten-free.....ksh. 300</option>
+                                    <option value="200">cripsy......ksh. 200</option>
+                                    <option value="150">stuffed.....ksh. 150</option>
+                                    <option value="300">glutten-free.....ksh. 300</option>
                                 </select>
                                 <br>
                                 <label for="Pizzas">Pizza-Size:</label>
-                                <select id="sizes" name="pizza-size">
-                                    <option value="small">small</option>
-                                    <option value="medium">medium</option>
-                                    <option value="large">large</option>
+                                <select id="pizza-size" name="pizza-size">
+                                    <option value="550">small</option>
+                                    <option value="800">medium</option>
+                                    <option value="1100">large</option>
                                 </select><br><br>
+                                <input type="number" name="pizza-number" id="pizza-number" placeholder="Number of Pizza"
+                                    required />
                                 <br><br>
+                                <input type="text" name="person-name" id="person-name" placeholder="Name.."
+                                    required /><br><br>
+                                <input type="number" name="phone-number" id="phone-number" placeholder="phone number"
+                                    required /> <br><br>
                                 <div id="buttons">
                                     <button class="btn btn-primary btn-outline-primary btn-success text-white"
-                                        type="button" id="checkout">Place Order</button>
+                                        type="button" id="submit">Place Order</button>
                                 </div>
                             </form>
                         </div>
@@ -323,10 +336,7 @@
                         </div>
 
                         <form id="delivery-form" action="">
-                            <input type="text" name="person-name" id="person-name" placeholder="Name.."
-                                required /><br><br>
-                            <input type="number" name="phone-number" id="phone-number" placeholder="phone number"
-                                required />
+                            
                             <br><br>
                             <input type="text" name="location" id="location" placeholder="location" required /><br><br>
                         </form>
@@ -358,3 +368,22 @@
 
 </html>
 <div class="sec2content row"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
