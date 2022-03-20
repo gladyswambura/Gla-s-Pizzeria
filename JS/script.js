@@ -26,14 +26,15 @@ var toppings = $('#toppings option:selected').val();
 var additionalToppings = $('#extra-toppings option:selected').val();
 var totalNumberOfPizza = $('#pizza-number').val();
 
-let totalsOfPizza = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings) +
+let totalsAmount = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings) +
     parseInt(additionalToppings) + parseInt(crustType) + deliveryFee);
 
     // display summary
  $("#ordersTaken").append("");
- if (OrderNew.length > 0) {
+ if (totalsAmount.length > 0) {
      $("#form-heading").empty();
      $("#form-heading").append("Make A New Order");
+     
 alert("Dear " + fullName + "Your" + pizzaFlavor + " " + telephoneNumber + totalsOfPizza);
 
 
