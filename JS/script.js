@@ -1,7 +1,5 @@
 
 var deliveryFee = 200;
-// var crustPrice = new Array(250, 350, 300);
-// var toppingsPrice = new Array(300, 200, 150, 400);
 
 function pizza(pizzaFlavor, crustType, pizzaSize, toppings, totalAmount) {
     this.pizzaFlavor = pizzaFlavor;
@@ -31,10 +29,7 @@ var totalAmount = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt
 
 
     // display summary
-// var  = new pizza(pizzaFlavor, pizzaSize, crustType, toppings, totalAmount);
-
 $("#submit").click(function () {
-    // $("#odersTaken").show();
       $("#ordersTaken").append(
           "<tr>" +
           '<td>' +
@@ -65,18 +60,12 @@ $("#submit").click(function () {
 // });
 
 
-// totalAmount = 0
-// for (let i = 0; i < OrderNew.length; i++) {
-//     totalAmount += OrderNew[i].totalPrice();
-//     console.log(totalAmount)
-// }
-
-
-// $("#checkoutForm").submit(function (event) {
-//     event.preventDefault();
-//     var name = $("#person-name").val();
-//     var deliveryOption = $("#OptionDelivery").val();
-// });
+$("#checkout").submit(function (event) {
+    $("#checkout-info").show
+    event.preventDefault();
+    var name = $("#person-name").val();
+    var deliveryOption = $("#OptionDelivery").val();
+});
 
 // $("#person-name").val("");
 // $("#OptionDelivery").val("");
