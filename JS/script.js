@@ -60,17 +60,20 @@ $("#submit").click(function () {
 // });
 
 
-$("#checkout").click(function() {
-    $("#checkout-info").show()
+$("#Checkout").click(function () {
+    $(".checkout-info").show();
+});
+$("#checkoutForm").submit(function (event) {
     event.preventDefault();
+    NameOfCustomer = name;
     var name = $("#person-name").val();
     var deliveryOption = $("#OptionDelivery").val();
 });
 
-// $("#person-name").val("");
-// $("#OptionDelivery").val("");
-// $(".checkout-info").hide();
-// $("#Checkout").hide();
+$("#person-name").val("");
+$("#OptionDelivery").val("");
+$(".checkout-info").hide();
+$("#Checkout").hide();
 
 // if (deliveryOption === "deliver") {
 //     $(".deliveryLocation").show();
