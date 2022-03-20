@@ -60,8 +60,8 @@ $("#submit").click(function () {
 // });
 
 
-$("#checkout").submit(function (event) {
-    $("#checkout-info").show
+$("#checkout").click(function() {
+    $("#checkout-info").show()
     event.preventDefault();
     var name = $("#person-name").val();
     var deliveryOption = $("#OptionDelivery").val();
